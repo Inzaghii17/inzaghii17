@@ -57,7 +57,7 @@ I enjoy understanding how things work under the hood — from operating systems 
 
 ## 🎵 yeah i really like music
 
-<div align="center">
+<div align="left">
 
 <a href="https://open.spotify.com/user/Inzaghee">
   <img src="https://novatorem-six-blush.vercel.app/?show_status=true" alt="Spotify Now Playing" width="420"/>
