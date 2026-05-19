@@ -1,0 +1,15 @@
+<svg width="800" height="12" viewBox="0 0 800 12" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#00d4ff;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:0.5"/>
+      <stop offset="80%" style="stop-color:#00d4ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="6" x2="800" y2="6" stroke="url(#divGrad)" stroke-width="0.5"/>
+  <!-- Center diamond node -->
+  <rect x="396" y="2" width="8" height="8" rx="1.5" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.4" transform="rotate(45 400 6)"/>
+  <rect x="398" y="4" width="4" height="4" rx="0.5" fill="#00d4ff" opacity="0.25" transform="rotate(45 400 6)"/>
+</svg>

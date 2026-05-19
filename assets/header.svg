@@ -1,0 +1,138 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0a0f"/>
+    </linearGradient>
+
+    <!-- Neon blue glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#00d4ff" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle blue glow for text -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#00d4ff" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Dot grid pattern -->
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="rgba(0,212,255,0.06)"/>
+    </pattern>
+
+    <!-- Animated dash for border -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.0"/>
+      <stop offset="30%" style="stop-color:#00d4ff;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#58a6ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bg)" rx="8"/>
+
+  <!-- Dot grid overlay -->
+  <rect width="800" height="200" fill="url(#dots)" rx="8" opacity="0.5"/>
+
+  <!-- Subtle border glow line at top -->
+  <line x1="100" y1="0" x2="700" y2="0" stroke="url(#borderGrad)" stroke-width="1.5">
+    <animate attributeName="x1" values="100;0;100" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="700;800;700" dur="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Decorative circuit lines -->
+  <g opacity="0.08" stroke="#00d4ff" stroke-width="0.5" fill="none">
+    <path d="M 0 50 L 80 50 L 100 30 L 200 30">
+      <animate attributeName="opacity" values="0.05;0.15;0.05" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 600 170 L 700 170 L 720 150 L 800 150">
+      <animate attributeName="opacity" values="0.05;0.15;0.05" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 170 L 50 170 L 70 180 L 120 180">
+      <animate attributeName="opacity" values="0.08;0.2;0.08" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 680 30 L 740 30 L 760 50 L 800 50">
+      <animate attributeName="opacity" values="0.08;0.18;0.08" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Small decorative nodes -->
+  <g fill="#00d4ff">
+    <circle cx="100" cy="30" r="1.5" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="170" r="1.5" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="150" r="1" opacity="0.12">
+      <animate attributeName="opacity" values="0.08;0.25;0.08" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Terminal prompt decoration -->
+  <g transform="translate(80, 55)">
+    <text font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace" font-size="11" fill="#8b949e" opacity="0.4">
+      ~/ishank
+    </text>
+    <text x="62" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace" font-size="11" fill="#00d4ff" opacity="0.35">
+      $
+    </text>
+  </g>
+
+  <!-- Main name -->
+  <text x="400" y="95" text-anchor="middle"
+        font-family="'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="36" font-weight="700" fill="#e6edf3" letter-spacing="-0.02em"
+        filter="url(#textGlow)">
+    Ishank Choudhary
+  </text>
+
+  <!-- Typing animation line -->
+  <g transform="translate(400, 130)">
+    <text text-anchor="middle"
+          font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace"
+          font-size="14" fill="#8b949e">
+      <tspan fill="#00d4ff" opacity="0.7">&#x276F;</tspan>
+      <tspan dx="6" fill="#c9d1d9"> systems</tspan>
+      <tspan fill="#6e7681"> · </tspan>
+      <tspan fill="#c9d1d9">backend</tspan>
+      <tspan fill="#6e7681"> · </tspan>
+      <tspan fill="#c9d1d9">algorithms</tspan>
+      <tspan fill="#6e7681"> · </tspan>
+      <tspan fill="#c9d1d9">linux</tspan>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="215" y="-11" width="8" height="15" fill="#00d4ff" opacity="0.7" rx="1">
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Subtle tagline -->
+  <text x="400" y="160" text-anchor="middle"
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif"
+        font-size="11" fill="#6e7681" letter-spacing="0.12em">
+    CS @ IIIT DELHI
+  </text>
+
+  <!-- Bottom border glow -->
+  <line x1="150" y1="200" x2="650" y2="200" stroke="url(#borderGrad)" stroke-width="1">
+    <animate attributeName="x1" values="150;50;150" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="650;750;650" dur="8s" repeatCount="indefinite"/>
+  </line>
+</svg>

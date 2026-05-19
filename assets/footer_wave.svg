@@ -1,0 +1,56 @@
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.1"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.05"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.02"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:0.04"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wave layer 3 (back) -->
+  <path fill="url(#waveGrad3)">
+    <animate attributeName="d"
+      values="M0,60 C150,80 350,30 500,50 C650,70 750,40 800,55 L800,100 L0,100 Z;
+              M0,50 C150,30 350,70 500,45 C650,20 750,60 800,40 L800,100 L0,100 Z;
+              M0,60 C150,80 350,30 500,50 C650,70 750,40 800,55 L800,100 L0,100 Z"
+      dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wave layer 2 (mid) -->
+  <path fill="url(#waveGrad2)">
+    <animate attributeName="d"
+      values="M0,70 C200,50 300,80 450,60 C600,40 700,70 800,55 L800,100 L0,100 Z;
+              M0,55 C200,75 300,45 450,65 C600,85 700,50 800,70 L800,100 L0,100 Z;
+              M0,70 C200,50 300,80 450,60 C600,40 700,70 800,55 L800,100 L0,100 Z"
+      dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wave layer 1 (front) -->
+  <path fill="url(#waveGrad1)">
+    <animate attributeName="d"
+      values="M0,80 C100,70 250,90 400,75 C550,60 700,85 800,70 L800,100 L0,100 Z;
+              M0,70 C100,85 250,65 400,80 C550,95 700,70 800,85 L800,100 L0,100 Z;
+              M0,80 C100,70 250,90 400,75 C550,60 700,85 800,70 L800,100 L0,100 Z"
+      dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Subtle scan line -->
+  <line x1="0" y1="95" x2="800" y2="95" stroke="#00d4ff" stroke-width="0.3" opacity="0.15"/>
+
+  <!-- Bottom text -->
+  <text x="400" y="96" text-anchor="middle"
+        font-family="'SF Mono', 'Fira Code', monospace"
+        font-size="8" fill="#6e7681" opacity="0.4" letter-spacing="0.2em">
+    ISHANK CHOUDHARY · 2025
+  </text>
+</svg>
