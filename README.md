@@ -54,19 +54,8 @@ I enjoy understanding how things work under the hood — from operating systems 
 
 ---
 
-## 📊 GitHub Stats
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Inzaghii17&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12"/>
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Inzaghii17&theme=tokyonight&hide_border=true&border_radius=12"/>
-
-</div>
-
----
-
-## 🎵 Now Playing
+## 🎵 yeah i really like music
 
 <div align="center">
 
