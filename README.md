@@ -4,7 +4,7 @@
 
 ### Computer Science & Mathematics @ IIIT-Delhi
 
-<img src="https://readme-typing-svg.demolab.com/?lines=Data+Structures+%26+Algorithms;Backend+Development;Systems+Programming;Full-Stack+Development;Linux+%26+Low-Level+Programming&font=Fira+Code&center=true&width=600&height=45&color=58A6FF&vCenter=true&pause=1000&size=22" />
+<img src="https://readme-typing-svg.demolab.com/?lines=Data+Structures+%26+Algorithms;Machine+Learning;Systems+Programming;Full-Stack+Development;Linux+%26+Low-Level+Programming&font=Fira+Code&center=true&width=600&height=45&color=58A6FF&vCenter=true&pause=1000&size=22" />
 
 </div>
 
